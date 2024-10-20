@@ -1,0 +1,21 @@
+.countries {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  border: 2px solid tomato;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+@media (min-width: 768px) {
+  .countries {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+    .countries {
+        grid-template-columns: repeat(3, 1fr);
+      }
+}
